@@ -9,12 +9,15 @@ while (numeroSecreto != chute) {
     chute = prompt("Digite um número entre 1 e 30");
 
     if (numeroSecreto == chute) {
+        
         alert(
             `Parabéns, você acertou!\n`+
             `O número secreto é: ${numeroSecreto}\n`+
             `Você acertou em: ${tentativas} tentativas!`
         );
+        
     } else {    
+        
         if (numeroSecreto < chute) {
             alert(
                 `O numero secreto é MENOR que ${chute}\n`+
@@ -25,7 +28,11 @@ while (numeroSecreto != chute) {
                 `O numero secreto é MAIOR que ${chute}\n`+
                 `Tentativas: ${tentativas}`
             );
+            
         }
+        
+      
     }
     tentativas++;
+
 }
