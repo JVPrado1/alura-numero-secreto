@@ -3,10 +3,11 @@ alert("Bem-vindo ao jogo do número secreto!");
 let numeroSecreto = 29;
 console.log("O número secreto é: " + numeroSecreto);
 let chute;
-let tentativas = 1;
+let tentativas = 0;
 
 while (numeroSecreto != chute) {
     chute = prompt("Digite um número entre 1 e 30");
+    tentativas++; 
 
     if (numeroSecreto == chute) {
         
@@ -31,8 +32,8 @@ while (numeroSecreto != chute) {
             
         }
         
-      
+        
     }
-    tentativas++;
+    
 
 }
