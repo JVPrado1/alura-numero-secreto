@@ -27,16 +27,9 @@ while (numeroSecreto != chute) {
     }
 }
 
-if (tentativas > 1){
-alert(
-    `Parabéns, você acertou!\n`+
-    `O número secreto é: ${numeroSecreto}\n`+
-    `Você acertou em: ${tentativas} tentativas!`
-)
-} else {
+let palavraTentativa = tentativas > 1 ? `tentativas` : `tentativa` 
     alert(
         `Parabéns, você acertou!\n`+
         `O número secreto é: ${numeroSecreto}\n`+
-        `Você acertou em: ${tentativas} tentativa!`
-    )
-}
+        `Você acertou em: ${tentativas} ${palavraTentativa}!`);
+    
