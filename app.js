@@ -1,4 +1,4 @@
-let numeroSecreto = parseInt(Math.random() * 31);
+let numeroSecreto = parseInt(Math.random() * 101);
 alert("Bem-vindo ao jogo do número secreto!");
 
 
@@ -7,7 +7,7 @@ let chute;
 let tentativas = 0;
 
 while (numeroSecreto != chute) {
-    chute = prompt("Digite um número entre 1 e 30");
+    chute = prompt("Digite um número entre 1 e 100");
     tentativas++; 
 
     if (numeroSecreto == chute) {
