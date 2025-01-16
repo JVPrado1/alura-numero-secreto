@@ -10,13 +10,7 @@ while (numeroSecreto != chute) {
     tentativas++; 
 
     if (numeroSecreto == chute) {
-        
-        alert(
-            `Parabéns, você acertou!\n`+
-            `O número secreto é: ${numeroSecreto}\n`+
-            `Você acertou em: ${tentativas} tentativas!`
-        );
-        
+        break;             
     } else {    
         
         if (numeroSecreto < chute) {
@@ -28,12 +22,21 @@ while (numeroSecreto != chute) {
             alert(
                 `O numero secreto é MAIOR que ${chute}\n`+
                 `Tentativas: ${tentativas}`
-            );
-            
-        }
-        
-        
+            );          
+        }      
     }
-    
+}
 
+if (tentativas > 1){
+alert(
+    `Parabéns, você acertou!\n`+
+    `O número secreto é: ${numeroSecreto}\n`+
+    `Você acertou em: ${tentativas} tentativas!`
+)
+} else {
+    alert(
+        `Parabéns, você acertou!\n`+
+        `O número secreto é: ${numeroSecreto}\n`+
+        `Você acertou em: ${tentativas} tentativa!`
+    )
 }
