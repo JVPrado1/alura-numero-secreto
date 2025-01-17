@@ -1,3 +1,9 @@
+@keyframes efeito-pokebola {
+    0% { filter: drop-shadow(0 0 0 red); }
+    50% { filter: drop-shadow(0 0 20px red); }
+    100% { filter: drop-shadow(0 0 0 red); }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
