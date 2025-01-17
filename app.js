@@ -42,6 +42,7 @@ async function verificarChute() {
         botaoReiniciar.disabled = false;
         const imagem = document.querySelector('.container__imagem-pokebola');
         imagem.src = pokemon.sprites.other['official-artwork'].front_default;
+        Object.assign(imagem.style, {width: '500px', height: 'auto'});
 
     } else {
         if (chute > numeroSecreto) {
@@ -68,5 +69,7 @@ function reiniciarJogo() {
     console.log(numeroSecreto);
     input.value = ""
     const imagem = document.querySelector('.container__imagem-pokebola');
-    imagem.src = './img/pokeball.png';
+    imagem.src = './img/pokebola.png';
+    Object.assign(imagem.style, {width: '400px', height: 'auto'});
+    
 }

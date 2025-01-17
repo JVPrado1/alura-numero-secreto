@@ -26,6 +26,7 @@ body::before {
     opacity: 0.4;
 }
 
+
 .container {
     width: 80%;
     height: 80%;
@@ -44,13 +45,27 @@ body::before {
 .container__conteudo {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    
+    
 }
 
 .container__informacoes {
     flex: 1;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 40px
+}
+
+.container__logoPokemon{
+    margin-left: 15;
+    display: block;
+    
 }
 
 .container__botao {
@@ -106,7 +121,6 @@ body::before {
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
-    padding-bottom: 3rem;
 }
 
 p,
