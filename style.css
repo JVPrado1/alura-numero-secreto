@@ -150,6 +150,10 @@ button:disabled {
 }
 
 @media screen and (max-width: 1250px) {
+
+    body{
+        min-height: 100vh;
+    }
     h1 {
         font-size: clamp(36px, 5vw, 50px);
     }
