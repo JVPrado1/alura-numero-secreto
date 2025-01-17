@@ -44,7 +44,7 @@ O jogo foi desenvolvido com design responsivo, adaptando-se perfeitamente a dife
 
 ## 🌐 Como Acessar
 
-O jogo está disponível em [https://jvprado1.github.io/alura-numero-secreto/]
+O jogo está disponível em [https://jvprado1.github.io/jogo-numero-secreto/]
 
 ---
 
