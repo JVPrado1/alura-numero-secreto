@@ -15,9 +15,9 @@ body {
 
 
 body::before {
-    background-image: url("img/code.png");
+    background-image: url("https://i.pinimg.com/736x/2b/3b/04/2b3b04771ccca26c3dd96d781b0117ca.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
     content: "";
     display: block;
     position: absolute;
@@ -36,6 +36,7 @@ body::before {
     border-radius: 24px;
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-color: rgba(0, 0, 0, 0.8);
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
@@ -48,6 +49,8 @@ body::before {
     justify-content: center;
     flex: 1;
     height: 100%;
+    
+    
     
     
     
