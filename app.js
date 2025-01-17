@@ -44,7 +44,7 @@ function verificarChute() {
             exibirTextoNaTela("h1", mensagemMaior);
         }
         
-        input.value = '';
+        input.value = "";
         exibirTextoNaTela("p", "Tente novamente!");
     }
 }
@@ -60,4 +60,5 @@ function reiniciarJogo() {
     botaoReiniciar.disabled = true;
     numeroSecreto = gerarNumeroSecreto();
     console.log(numeroSecreto);
+    input.value = ""
 }
