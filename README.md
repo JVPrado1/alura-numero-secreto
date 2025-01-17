@@ -47,4 +47,10 @@ O jogo está disponível em [https://jvprado1.github.io/alura-numero-secreto/]
 
 ---
 
+## 📸 Screenshots
+
+![Tela Desktop](./img/desktop.png)
+![Tela Mobile](./img/mobile.png)
+![Tela Tablet](./img/tablet.png)
+
 Desenvolvido por João Victor Prado durante o curso da Alura.
