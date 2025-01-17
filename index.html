@@ -23,7 +23,9 @@
                     <h1></h1>
                     <p class="texto__paragrafo"></p>
                 </div>
-                <input type="number" min="1" max="10" class="container__input">
+                <input type="number" min="1" max="151" class="container__input" data-error-message="Digite um número entre 1 e 151" >
+                <span class="helper-text"></span>
+                
                 <div class="chute container__botoes">
                     <button onclick="verificarChute()" id ="verificar" class="container__botao">Adivinhar</button>
                     <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>

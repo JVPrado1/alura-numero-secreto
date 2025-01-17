@@ -1,6 +1,7 @@
 const input = document.querySelector('input');
 const botaoChute = document.querySelector('.container__botao');
 const botaoReiniciar = document.querySelector('#reiniciar');
+const textoInvalido = document.querySelector('.helper-text');
 
 let tentativas = 0;
 
@@ -34,6 +35,18 @@ function exibirTextoInicial() {
 
 async function verificarChute() {
     let chute = input.value;
+    
+    console.log(validarInput(chute));
+
+    if (validarInput(chute) == false){
+        input.style.outline = '4px solid red';
+        exibirTextoNaTela(".helper-text", "Número de Pokedéx inválido! <br> (Digite um número de 1 até 151)");
+        textoInvalido.style.display = "block";
+      
+    } else {
+        input.style.outline = '4px solid green';
+        textoInvalido.style.display = "none";
+
     let mensagemMenor = `O número é menor que ${chute}.`;
     let mensagemMaior = `O número é maior que ${chute}.`;
     tentativas++
@@ -67,10 +80,20 @@ async function verificarChute() {
         
     }
 }
+}
 
 function gerarNumeroSecreto() {
     return parseInt(Math.random() * 151 + 1);
 }
+
+function validarInput(chute) {
+    if (chute < 1 || chute > 151 || !Number.isInteger(Number(chute))) {
+        return false;
+    }
+    return true;
+}
+
+
 
 function reiniciarJogo() {
     exibirTextoInicial();

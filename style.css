@@ -147,6 +147,14 @@ button:disabled {
     font-size: 24px;
 }
 
+.helper-text{
+    color: red;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    display: none;
+   
+}
+
 @media screen and (max-width: 1250px) {
 
     h1 {
