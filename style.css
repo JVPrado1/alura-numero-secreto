@@ -13,7 +13,6 @@ body {
     justify-content: center;
 }
 
-
 body::before {
     background-image: url("https://i.pinimg.com/736x/2b/3b/04/2b3b04771ccca26c3dd96d781b0117ca.jpg");
     background-size: cover;
@@ -25,7 +24,6 @@ body::before {
     height: 100%;
     opacity: 0.4;
 }
-
 
 .container {
     width: 80%;
@@ -42,18 +40,12 @@ body::before {
     position: relative;
 }
 
-
 .container__conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
     height: 100%;
-    
-    
-    
-    
-    
 }
 
 .container__informacoes {
@@ -63,13 +55,11 @@ body::before {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-   
 }
 
-.container__logoPokemon{
+.container__logoPokemon {
     margin-left: 15;
     display: block;
-    
 }
 
 .container__botao {
@@ -83,13 +73,10 @@ body::before {
     margin-top: 2rem;
 }
 
-
-
 .container__botao:not([disabled]):hover {
     opacity: 0.8;
     cursor: pointer;
 }
-
 
 #reiniciar:not([disabled]):hover {
     opacity: 0.8;
@@ -127,8 +114,7 @@ h1 {
     font-size: 72px;
 }
 
-p,
-button {
+p, button {
     font-family: 'Inter', sans-serif;
 }
 
@@ -142,42 +128,42 @@ button:disabled {
 }
 
 .container__imagem-pokebola {
-    padding: 40px ;
+    padding: 40px;
     margin-left: 50px;
 }
 
-.texto__tentativas{
+.texto__tentativas {
     font-size: 24px;
 }
 
-.helper-text{
+.helper-text {
     color: red;
     font-size: 20px;
     transition: all 0.3s ease;
     display: none;
-   
 }
 
 @media screen and (max-width: 1250px) {
-
     h1 {
         font-size: clamp(36px, 5vw, 50px);
     }
 
+    .helper-text{
+        margin-top: 12px;
+    }
     .container__botao {
         font-size: 16px;
         height: fit-content;
     }
 
-    #reiniciar{
+    #reiniciar {
         height: 52px;
         padding: 15px;
     }
 
-    .container__input{
+    .container__input {
         min-width: 130px;
     }
-
 
     .texto__paragrafo {
         font-size: 16px;
@@ -185,55 +171,53 @@ button:disabled {
 
     .container__imagem-pokebola {
         margin-right: 0;
-        padding: 0; 
+        padding: 0;
         width: fit-content;
     }
-    .testeimagem{
+
+    .testeimagem {
         width: clamp(200px, 35%, 500px);
-        
     }
 
-    .texto__tentativas{
+    .texto__tentativas {
         margin-top: 20px;
     }
 
-    .container__logoPokemon{
+    .container__logoPokemon {
         width: clamp(200px, 50%, 300px);
     }
+
     .container__conteudo {
         flex-direction: column;
         gap: 40px;
         padding: clamp(14px, 20px, 50px);
         justify-content: center;
-        
     }
-    
-    .container__informacoes { 
+
+    .container__informacoes {
         align-items: center;
         text-align: center;
         flex-grow: 0;
-        gap: clamp(0px, 0-%, 12px);
+        gap: clamp(0px, 0%, 12px);
         padding: 0;
-        
     }
 }
 
-
 @media screen and (max-width: 1720px) {
-h1 {
-    max-width: 600px ;
-}
+    h1 {
+        max-width: 600px;
+    }
 
-.container__imagem-pokebola{
-    
-    max-width: 60%;
-    margin: 0;
-    padding: 0;
-    margin-right: 11px;   
-}
+    .container__imagem-pokebola {
+        max-width: 60%;
+        margin: 0;
+        padding: 0;
+        margin-right: 11px;
+    }
 
-.testeimagem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .testeimagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
