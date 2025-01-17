@@ -34,13 +34,15 @@ async function verificarChute() {
     if (chute == numeroSecreto) {
         const response =  await fetch(`https://pokeapi.co/api/v2/pokemon/${numeroSecreto}`);
         const pokemon = await response.json();
-        let fraseAcerto = `Fim de Jogo! Você venceu! =) <br> O Pokémon Secreto era o ${pokemon.name}.`
+        exibirTextoNaTela("h1", `Você encontrou ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}!`);
         console.log(pokemon);
-        exibirTextoNaTela("h1", fraseAcerto );
         exibirTextoNaTela("p", "Clique em Novo Jogo para jogar novamente!");
         input.style.visibility = 'hidden';
         botaoChute.disabled = true;
         botaoReiniciar.disabled = false;
+        const imagem = document.querySelector('.container__imagem-pokebola');
+        imagem.src = pokemon.sprites.other['official-artwork'].front_default;
+
     } else {
         if (chute > numeroSecreto) {
             exibirTextoNaTela("h1", mensagemMenor);
@@ -65,4 +67,6 @@ function reiniciarJogo() {
     numeroSecreto = gerarNumeroSecreto();
     console.log(numeroSecreto);
     input.value = ""
+    const imagem = document.querySelector('.container__imagem-pokebola');
+    imagem.src = './img/pokeball.png';
 }
