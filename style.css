@@ -161,7 +161,8 @@ button:disabled {
     }
 
     .helper-text{
-        margin-top: 12px;
+        margin-top: 8px !important;
+        font-size: 12px;
     }
     .container__botao {
         font-size: 16px;
@@ -198,6 +199,7 @@ button:disabled {
 
     .texto__tentativas {
         margin-top: 20px;
+        font-size: 16px;
     }
 
     .container__logoPokemon {
@@ -206,7 +208,7 @@ button:disabled {
 
     .container__conteudo {
         flex-direction: column;
-        gap: 40px;
+        gap: 10px;
         padding: clamp(14px, 20px, 50px);
         justify-content: center;
     }
