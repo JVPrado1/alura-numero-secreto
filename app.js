@@ -52,6 +52,8 @@ async function verificarChute() {
         console.log(tentativas);
 
         if (chute == numeroSecreto) {
+            const audio = new Audio('./sounds/pokebolafx.mp3');
+            audio.play();
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${numeroSecreto}`);
             const pokemon = await response.json();
             exibirTextoNaTela("h1", `Você encontrou ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}!`);
