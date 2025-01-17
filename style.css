@@ -186,3 +186,19 @@ button:disabled {
         padding: 1rem
     }
 }
+
+
+@media screen and (max-width: 1720px) {
+h1 {
+    width: 600px ;
+}
+
+.container__imagem-pokebola{
+    object-fit: contain;
+    max-width: 30%;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    
+}
+}
