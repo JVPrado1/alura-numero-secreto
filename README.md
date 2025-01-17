@@ -1,6 +1,6 @@
 # Jogo do Número Secreto - Edição Pokémon
 
-Um jogo divertido e interativo de adivinhação de números desenvolvido com JavaScript, HTML e CSS, personalizado com o tema Pokémon para tornar a experiência mais divertida!
+Um jogo interativo de adivinhação de números desenvolvido com JavaScript, HTML e CSS, personalizado com o tema Pokémon para tornar a experiência mais divertida!
 
 ## 🎯 Objetivo
 
