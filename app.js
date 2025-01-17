@@ -20,11 +20,11 @@ function exibirTextoNaTela(tag, texto) {
 exibirTextoInicial();
 
 function exibirTextoInicial() {
-    exibirTextoNaTela("h1", "Jogo do Número Secreto");
+    exibirTextoNaTela("h1", "Quem é esse Pokémon?");
     exibirTextoNaTela("p", "Digite um número da pokédex entre 1 e 151:");
 }
 
-function verificarChute() {
+async function verificarChute() {
     let chute = input.value;
     let mensagemMenor = `O número é menor que ${chute}.`;
     let mensagemMaior = `O número é maior que ${chute}.`;
@@ -32,7 +32,11 @@ function verificarChute() {
     console.log(chute);
     
     if (chute == numeroSecreto) {
-        exibirTextoNaTela("h1", "Fim de Jogo! Você venceu! =)");
+        const response =  await fetch(`https://pokeapi.co/api/v2/pokemon/${numeroSecreto}`);
+        const pokemon = await response.json();
+        let fraseAcerto = `Fim de Jogo! Você venceu! =) <br> O Pokémon Secreto era o ${pokemon.name}.`
+        console.log(pokemon);
+        exibirTextoNaTela("h1", fraseAcerto );
         exibirTextoNaTela("p", "Clique em Novo Jogo para jogar novamente!");
         input.style.visibility = 'hidden';
         botaoChute.disabled = true;
