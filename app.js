@@ -21,7 +21,7 @@ exibirTextoInicial();
 
 function exibirTextoInicial() {
     exibirTextoNaTela("h1", "Jogo do Número Secreto");
-    exibirTextoNaTela("p", "Digite um número entre 1 e 100:");
+    exibirTextoNaTela("p", "Digite um número da pokédex entre 1 e 151:");
 }
 
 function verificarChute() {
