@@ -66,6 +66,4 @@ O jogo está disponível em [https://jvprado1.github.io/alura-numero-secreto/]
 
 ---
 
-Desenvolvido durante o curso da Alura
-
 Desenvolvido por João Victor Prado durante o curso da Alura.
