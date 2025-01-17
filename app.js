@@ -50,7 +50,7 @@ function verificarChute() {
 }
 
 function gerarNumeroSecreto() {
-    return parseInt(Math.random() * 100 + 1);
+    return parseInt(Math.random() * 151 + 1);
 }
 
 function reiniciarJogo() {
