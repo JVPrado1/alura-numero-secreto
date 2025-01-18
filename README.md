@@ -52,17 +52,17 @@ O jogo está disponível em [https://jvprado1.github.io/jogo-numero-secreto/]
 
 <div align="center">
   <img src="./img/desktop.png" width="600px" alt="Tela Desktop">
-  <p><i>Versão Desktop do jogo</i></p>
+  <p><i>Tela Desktop do jogo</i></p>
 </div>
 
 <div align="center">
   <img src="./img/mobile.png" width="300px" alt="Tela Mobile">
-  <p><i>Versão Mobile do jogo</i></p>
+  <p><i>Tela Mobile do jogo</i></p>
 </div>
 
 <div align="center">
   <img src="./img/tablet.png" width="450px" alt="Tela Tablet">
-  <p><i>Versão Tablet do jogo</i></p>
+  <p><i>Tela Tablet do jogo</i></p>
 </div>
 
 ---
