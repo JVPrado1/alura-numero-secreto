@@ -39,11 +39,11 @@ async function verificarChute() {
     console.log(validarInput(chute));
 
     if (validarInput(chute) == false) {
-        input.style.outline = '4px solid red';
+        input.style.outline = '2px solid red';
         exibirTextoNaTela(".helper-text", "Número de Pokedéx inválido! <br> (Digite um número de 1 até 151)");
         textoInvalido.style.display = "block";
     } else {
-        input.style.outline = '4px solid green';
+        input.style.outline = 'none';
         textoInvalido.style.display = "none";
 
         let mensagemMenor = `O número é menor que ${chute}.`;
@@ -111,4 +111,5 @@ function reiniciarJogo() {
     imagem.src = './img/pokebola.png';
     Object.assign(imagem.style, {width: '400px', height: 'auto'});
     imagem.style.animation = 'none';
+    input.style.outline = 'none';
 }
