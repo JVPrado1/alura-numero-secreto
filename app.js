@@ -1,3 +1,5 @@
+let listaNumerosSorteados = [];
+
 const input = document.querySelector('input');
 const botaoChute = document.querySelector('.container__botao');
 const botaoReiniciar = document.querySelector('#reiniciar');
@@ -80,7 +82,13 @@ async function verificarChute() {
 }
 
 function gerarNumeroSecreto() {
-    return parseInt(Math.random() * 151 + 1);
+    numeroEscolhido = parseInt(Math.random() * 151 + 1);
+    if (listaNumerosSorteados.includes(numeroEscolhido)) {
+        return gerarNumeroSecreto();
+    } else {
+        listaNumerosSorteados.push(numeroEscolhido);
+        return numeroEscolhido;
+    }
 }
 
 function validarInput(chute) {
