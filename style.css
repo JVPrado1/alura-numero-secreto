@@ -1,9 +1,11 @@
+/* Animação pokebola */
 @keyframes efeito-pokebola {
     0% { filter: drop-shadow(0 0 0 red); }
     50% { filter: drop-shadow(0 0 20px red); }
     100% { filter: drop-shadow(0 0 0 red); }
 }
 
+/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +13,8 @@
     color: white;
 }
 
-html{
+/* Base */
+html {
     height: 100dvh;
 }
 
@@ -21,7 +24,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
- 
 }
 
 body::before {
@@ -34,6 +36,32 @@ body::before {
     width: 100%;
     height: 100dvh;
     opacity: 0.4;
+}
+
+/* Tipografia */
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 72px;
+}
+
+p, button {
+    font-family: 'Inter', sans-serif;
+}
+
+.texto__paragrafo {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.texto__tentativas {
+    font-size: 24px;
+}
+
+.helper-text {
+    color: red;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    display: none;
 }
 
 .container {
@@ -73,6 +101,38 @@ body::before {
     display: block;
 }
 
+.container__texto {
+    margin: 16px 0 16px 0;
+}
+
+.container__texto-azul {
+    color: #1875E8;
+}
+
+.container__botoes {
+    display: flex;
+    gap: 2em;
+}
+
+.container__imagem-pokebola {
+    padding: 40px;
+    margin-left: 50px;
+}
+
+/* Form Elements */
+.container__input {
+    max-width: 30%;
+    height: 72px;
+    border-radius: 16px;
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
 .container__botao {
     border-radius: 16px;
     background: #1875E8;
@@ -94,80 +154,65 @@ body::before {
     cursor: pointer;
 }
 
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
-}
-
-.container__input {
-    max-width: 30%;
-    height: 72px;
-    border-radius: 16px;
-    background-color: #FFF;
-    border: none;
-    color: #1875E8;
-    padding: 2rem;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
-}
-
-.container__botoes {
-    display: flex;
-    gap: 2em;
-}
-
-h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
-}
-
-p, button {
-    font-family: 'Inter', sans-serif;
-}
-
-.texto__paragrafo {
-    font-size: 32px;
-    font-weight: 400;
-}
-
 button:disabled {
     background-color: gray;
 }
 
-.container__imagem-pokebola {
-    padding: 40px;
-    margin-left: 50px;
-}
+/* Media Queries */
+@media screen and (max-width: 1720px) {
+    h1 {
+        max-width: 600px;
+    }
 
-.texto__tentativas {
-    font-size: 24px;
-}
+    .container__imagem-pokebola {
+        max-width: 60%;
+        margin: 0;
+        padding: 0;
+        margin-right: 11px;
+    }
 
-.helper-text {
-    color: red;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    display: none;
+    .testeimagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .helper-text {
+        margin-top: 0;
+    }
+
+    .container__conteudo {
+        padding: 30px;
+    }
+
+    .container__informacoes {
+        padding: 0;
+    }
+
+    #verificar,
+    #reiniciar {
+        margin-top: 20px;
+    }
+
+    .texto__tentativas {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 1250px) {
-
-    body{
+    body {
         height: 100dvh;
-       }
+    }
     
     h1 {
         font-size: clamp(36px, 5vw, 50px);
     }
 
-    .helper-text{
+    .helper-text {
         margin-top: 8px !important;
         font-size: 13px;
     }
+
     .container__botao {
         font-size: 16px;
         width: 100px;
@@ -223,46 +268,5 @@ button:disabled {
         flex-grow: 0;
         gap: clamp(0px, 0%, 12px);
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 1720px) {
-    h1 {
-        max-width: 600px;
-    }
-
-    .container__imagem-pokebola {
-        max-width: 60%;
-        margin: 0;
-        padding: 0;
-        margin-right: 11px;
-    }
-
-    .testeimagem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .helper-text{
-        margin-top: 0;
-    }
-
-    .container__conteudo{
-        padding: 30px;
-    }
-
-    .container__informacoes{
-        padding: 0;
-    }
-
-    #verificar,
-    #reiniciar{
-        margin-top: 20px;
-
-    }
-
-    .texto__tentativas{
-        margin-top: 15px;
     }
 }
